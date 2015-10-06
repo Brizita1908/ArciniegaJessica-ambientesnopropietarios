@@ -1,0 +1,189 @@
+body{
+    margin: auto 5%;
+	font-family: "Harrington";
+	font-size: 120%;
+}
+
+p{
+	color:#0404B4;
+	font-family:Baskerville Old Face;
+}
+
+h3 {
+	color:#8A0808;
+}
+
+h1, h2 {
+	color:#088A08;
+}
+
+table, th, td {
+    border: none;
+    border-collapse: collapse;
+}
+th, td {
+	padding-top: 20px;
+    padding: 35px;
+	text-align: center;	
+}
+
+#menu {
+	
+    width: 1280px;
+    height: 50px;
+    text-align: center;
+	padding:25px 0px;
+}
+#menu a:hover {
+    background-color: #FF404D;
+}
+
+#blog {
+    background-color: #FF404D;
+}
+
+#presentacion {
+    background-image: url("imagenes/fondo1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+    width: 1280px;
+    height: 491px;
+	text-align: center;
+}
+
+#presentacion h3 {
+	margin: 0px 520px;
+	background-color: #6E6E6E;
+	padding: 20px;
+	color:#3A2F0B;
+	font-family:Britannic Bold;
+}
+
+#presentacion img{
+	padding:40px;
+}
+
+#presentacion h1 {
+	padding-top: 10px;
+	font-size: 250%;
+	color:#FF0000;
+}
+
+#presentacion p {
+	color: white;
+	font-family:Arial Black;
+}
+
+#galeria {
+	background-color:#AFEEEE;
+    width: 1280px;
+    height: 330px;
+	padding-top: 30px;
+}
+
+
+#fotos {
+	background-color:#86ABA6;
+	width: 1280px;
+    height: 490px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+#fotos table {
+	margin: 40px 0px;
+	padding: 0px;
+}
+
+#fotos h2, h4 {	
+	margin: 10px 380px ;
+	padding-top: 20px;
+	display: inline;
+}
+
+#fotos h4 {
+	margin: 10px;
+	background-color: #6E6E6E;
+	padding: 20px;
+	color:#3A2F0B;
+	font-family:Britannic Bold;
+}
+
+
+#camera{
+	margin: 0 auto;
+	padding: 40px 70px;
+	border: 15px solid #AFEEEE;
+}
+
+#nosotros {
+	background-color:#AFEEEE;
+    width: 1280px;
+    height: 690px;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+#nosotros h4 {
+	margin: 50px 0px;
+	background-color: #6E6E6E;
+	padding: 7px;
+}
+
+#contactos {
+	background-color:#86ABA6;
+    width: 1280px;
+    height: 445px;
+}
+
+
+#opciones {
+    width:314px;
+    height: 330px;
+    border: 1px solid #8AC007;
+}
+#image {
+    width:320px;
+    height: 330px;
+    border: 1px solid #8AC007;
+    margin:85px 50px;
+}
+
+
+li {
+    display: inline;
+    color: blue;
+    margin: 40px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: 30px;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+}
+
+
+
+#contactos table, th, td {
+	margin: 0 auto;
+	padding: 0px;
+}
+
+#contactos img {
+	padding: 5px;
+}
+
+#singup {
+	margin: 0px 30px 0px 170px;
+	background-color: #6E6E6E;
+	padding: 15px;
+
+}
+
+#numero {
+	text-align:right;
+}
+
+
