@@ -1,0 +1,23 @@
+.capa1 {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.capa2{
+	width: 700px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.login{
+ height:180px;
+ width: 100%;
+ padding: 30px 0px;
+ border: black 1px solid;
+ padding:50px 50px;
+}
+.datos{
+ height:280px;
+ width: 100%;
+ border: black 1px solid;
+ padding:50px 50px;
+}

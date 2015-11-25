@@ -1,0 +1,35 @@
+<?php 
+include('php/p_registro.php');
+
+echo '<!DOCTYPE html>';
+echo '<html>';
+echo '<head>';
+echo '<link rel="stylesheet" href="css/estilos.css">';
+echo '<meta charset="utf-8">';
+echo '<title>Registro de Usuarios</title>';
+echo '</head>';
+echo '<body>';
+echo '<div class="capa1">';
+echo '<div class="capa2">';
+echo '<form action="php/p_registro.php" method="post">';
+echo '<div class="datos">';
+echo '<div>';
+echo '<label for="email">Email</label>';
+echo '<input type="text" id="email" name="email" value="">';
+echo '</div>';
+echo '<div>';
+echo '<label for="contrasenia">Contraseña</label>';
+echo '<input type="password" id="contrasenia" name="contrasenia" value="">';
+echo '</div>';
+echo '<div>';
+echo '<label for="ver_contrasenia">Verificar Contraseña</label>';
+echo '<input type="password" id="ver_contrasenia" name="ver_contrasenia" value="">';
+echo '</div>';
+echo '<div>';
+echo '<button id="registrarme" name="registrarme">Registrarme</button>';
+echo '</div>';
+echo '</div>';
+echo '</div>';
+echo '</div>';
+echo '</body>';
+echo '</html>';
