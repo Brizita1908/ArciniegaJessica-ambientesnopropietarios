@@ -1,0 +1,174 @@
+/*menu*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>li>a:hover{
+	background-image: url(../img/hover.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus{
+	color:#ffffff;
+	background-color:#12A3D6;
+	background-image: url(../img/hover.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.navbar-default .navbar-nav>li>a{
+	padding-bottom: 25px;
+
+}
+
+.btn-blog{
+	 margin-top: 16px; 
+	 background-color:#f98561;
+	 border: none;
+	 padding: 2px 15px;
+	 color: white;
+}
+
+.btn-search{
+	opacity: 0.8;
+	background-color: transparent;
+	border: none;
+}
+
+/*header*/
+.text-cap{
+	text-align: center;
+	padding-bottom: 150px;
+}
+.text-cap h1{
+ 	font-size: 410%;
+ 	font-family: Bodoni MT Condensed;
+ }
+
+ .btn-learn{
+ 	background-color: #f98561;
+ 	border: 1px solid #f98561;
+ 	color: white;
+ 	padding: 10px 40px;
+ 	font-size: 110%;
+ 	margin-top: 30px;
+ }
+
+.c-in{
+	text-align: right;
+	padding-bottom: 30px;
+}
+
+.c-in .active{
+	border:3px solid #f98561;
+	background-color: #2e3e4f;
+}
+.c-in li{
+	background-color: #e7e7e7;
+}
+
+/*Our Services*/
+#services{
+	background-color: #f4f4f4;
+	height: 330px;
+	text-align: center;
+}
+
+#services h3{
+	font-family: Century;
+}
+
+.img-s{
+	padding-top: 40px;
+
+}
+
+#portfolio{
+	background-color: #2e3e4f;
+	height: 550px;
+	color: #e7e7e7;
+}
+
+.txt{
+	color: #f98561;
+}
+
+.img-p{
+	padding-top: 50px;
+}
+.btn-p{
+	float: right;
+	display:inline;
+	background-color: #2190c1;
+	border: 1px solid #2190c1;
+	color: white;
+	margin-right: 80px; 
+}
+
+.titulo{
+	margin-left: 20px;
+	margin-top: 60px;
+}
+
+#offer{
+	background-color: #f4f4f4;
+	height: 600px;
+	text-align: center;
+}
+
+#offer h2{
+	color: #2190c1;
+	font-size: 250%;
+	font-family: Yu Gothic UI Semibold;
+}
+
+#offer h3{
+	color: #2190c1;
+	font-family: Century;
+	font-size: 180%;
+}
+
+.text{
+	text-align: left;
+}
+
+.btn-details{
+	float: right;
+	background-color: #2190c1;
+	color: white;
+}
+
+#jon{
+	color: #f98561;
+	padding-top: 30px;
+}
+
+#footer{
+	background-color: #2e3e4f;
+	height: 330px;
+	border: 1px solid black;
+	color: #a3afb2;
+}
+
+#footer h3{
+	font-family: Yu Gothic UI Semibold;
+}
+
+#email{
+	color:#2190c1;
+}
+
+.in-email{
+	border-radius: 2px;
+	padding-right: 75px;
+}
+
+.btn-signup{
+	float: right;
+	background-color: #2190c1;
+	color: white;
+	border: 1px solid #2190c1;
+	margin-top: 10px;
+}
+
+.img-f{
+	padding-right: 15px;
+}
+
