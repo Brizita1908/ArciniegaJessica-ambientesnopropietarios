@@ -1,0 +1,7 @@
+#Redirect 301 http://localhost:8080/examen2/pagina_antigua.php http://localhost:8080/examen2/nueva_pagina.php
+
+#php_value max_excecution_time 3600
+#php_value upload_max_filesize 30M
+
+php_value auto_prepend_file C:\xampp\htdocs\examen2\inc\config.php
+php_value include_path C:\xampp\htdocs\examen2\php;C:\xampp\htdocs\examen2\inc

@@ -71,8 +71,15 @@ $(document).ready(function() {
               "contrasena": $("form#registro #contrasena").val()}
       })
       .done(function(msg) {
+        if(msg=='true'){
+          alert('Usuario registrado');
+          window.location.href='index.php';
+        }
+        else
+        {
+          alert('no se pudo registrar');
+        }
         console.log("success");
-        $("#success").html(msg);
         $('#registro').trigger("reset");
       })
       .fail(function(jqXHR, textStatus, errorThrown) {
@@ -88,7 +95,7 @@ $(document).ready(function() {
   })
 
   $("#btn-cancelar").on('click', function(){
-   window.location.href='index.html';
+   window.location.href='index.php';
   })
 
 
@@ -112,12 +119,11 @@ $(document).ready(function() {
       minlength: $.validator.format("Al menos {0} caracteres requeridos")
     }
   }
-  })
+  }),
 
   $("#btn-inises").on("click", function(){
 
-    if( $( "form#inicio-sesion" ).valid() ) {   
-       var $btn = $(this).button('loading');
+    if( $( "form#inicio-sesion" ).valid() ) {
       $.ajax({
         url: 'rpc/inisesion.php',
         type: 'post',
@@ -126,8 +132,14 @@ $(document).ready(function() {
               "contrasena": $("form#inicio-sesion #contrasena").val()}
       })
       .done(function(msg) {
+        if(msg=='true'){
+          alert("Has ingresado al modulo de matriculas");
+          window.location.href='matriculacion.php';
+        }
+        else{
+          alert("El usuario o contraseña ingresados no son correctos");
+        }
         console.log("success");
-        $("#success").html(msg);
         $('#inicio-sesion').trigger("reset");
 
       })
@@ -137,14 +149,13 @@ $(document).ready(function() {
       })
       .always(function() {
         console.log("complete");
-        $btn.button('reset');
       });
     }
     
   })
 
   $("#btn-reg").on('click', function(){
-   window.location.href='registro.html';
+   window.location.href='registro.php';
   })
 
 
@@ -170,21 +181,37 @@ $(document).ready(function() {
   })
 
 
-  $("#btn-regmaterias").on('click', function(){
-    
-    
 
-    var mats = [];
-    mats.push($(this).val());
+var mats = [];
+
+
+  $('#materias').on('click', function(event) {
+      event.preventDefault();
+
+      $('input:checkbox:checked').each(function ()
+      {
+          mats.push($(this).val());
+        
+      });
+      
+    });
+
+  $("#btn-regmaterias").on('click', function(){
+    event.preventDefault();
+
+
     alert(mats);
 
     $.ajax({
       url: 'rpc/reg_materias.php',
       type: 'POST',
-      data: {"materias": mats},
+      //dataType: 'JSON',
+      data: {materias:mats},
     })
-    .done(function() {
+    .done(function(msg) {
+      $('#materias').html(msg);
       console.log("success");
+      location.reload();
     })
     .fail(function() {
       console.log("error");
@@ -192,15 +219,12 @@ $(document).ready(function() {
     .always(function() {
       console.log("complete");
     });
-    
+
     
   })
 
-  $("input:checkbox:checked").each(function(){
-      //cada elemento seleccionado
-      alert($(this).val());
-    });
+  
 
-
+ 
 
 });

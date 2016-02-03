@@ -1,6 +1,5 @@
 <?php
-$result = "";
-//print_r($_POST);
+
 if ( $_POST ) {
   $nombres = htmlentities($_POST['nombres']);
   $apellidos = htmlentities($_POST['apellidos']);
@@ -16,13 +15,10 @@ if ( $_POST ) {
 
   $result=$conn->query($query);
 
-    if(!$result){
-      $res = 'Existi&oacute; un error al insertar.' . $conn->error;
+    if($result){
+      echo 'true';
     }else {
-      $res = 'Mensaje enviado con &eacute;xito.';
+      echo 'false';
     }
 
 }
-
-echo json_encode( $res );
-?>
